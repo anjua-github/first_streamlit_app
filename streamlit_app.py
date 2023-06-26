@@ -22,7 +22,7 @@ fruits_to_show = my_fruit_list.loc[selected_fruits]
 streamlit.dataframe(fruits_to_show)
 
 #display fruityvice api response
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
 streamlit.text(fruityvice_response)
 
 streamlit.header('Fruitvice Fruit Advise')
